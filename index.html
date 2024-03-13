@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
-  
+
   <style>
-    .button_cont{
+    .button_cont {
       width: 300px;
       height: 200px;
       margin: 0 auto;
@@ -16,22 +18,102 @@
       border-radius: 10px;
     }
 
-    .button_cont > button {
+    .button_cont>button {
       margin: 80px;
       background-color: gold;
       cursor: pointer;
       border-radius: 5px;
 
     }
+
+    #colorButton {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    #colorBlock {
+      width: 100%px;
+      height: 100px;
+      background-color: aqua;
+    }
+
+    .containerTablr{
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .imgBlick{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    #titleH1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
   </style>
 
-  <div class="button_cont">
+<h1 id="titleH1">Загаловок</h1>
+
+  <div class="button_cont" id="aqua">
     <button id="buttonCl">
       Нажми да по братский
     </button>
   </div>
 
+  <button id="colorButton">
+    Поменяй цвет уцы
+  </button>
+
+  <div id="colorBlock"></div>
+
+  <div class="containerTablr">
+    <table border="">
+
+      <tr>
+        <th colspan="2">Заголовок</th>
+      </tr>
+      <tr>
+        <td id="tdYach">
+          Текст
+        </td>
+        <td id="tdYach">
+          Текст
+        </td>
+        <td id="tdYach">
+          Текст
+        </td>
+      </tr>
+      <tr>
+        <td id="tdYach">
+          Текст
+        </td>
+        <td id="tdYach">
+          Текст
+        </td>
+        <td id="tdYach">
+          Текст
+        </td>
+      </tr>
+      
+  
+    </table>
+  </div>
+
+
+  <div class="imgBlick">
+    <img src="горки.png" alt="Каталки" width="100px">
+    <img src="машина.png" alt="Машина(я)" width="100px">
+    <img src="яхта.png" alt="Яхта" width="100px">
+    <img src="fruits.png" alt="Фрукты" width="100px">
+  </div>
 
   <script src="four.js"></script>
 </body>
+
 </html>
